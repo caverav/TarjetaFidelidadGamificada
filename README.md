@@ -4,7 +4,8 @@
 Sistema CLI en Java para gestionar clientes, compras y niveles de fidelidad.
 
 ## Diseño
-Diagrama UML simplificado en `docs/UML.png`.
+
+![Diagrama](docs/UML.png)
 
 ## Compilar y ejecutar
 ```bash
