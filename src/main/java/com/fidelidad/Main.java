@@ -16,7 +16,8 @@ public class Main {
         FidelidadService svc = new FidelidadService(
             new InMemoryClienteRepository(), new InMemoryCompraRepository()
         );
-        while (true) {
+        boolean salir = false;
+        while (!salir) {
             System.out.println("1. Gestión de Clientes\n2. Gestión de Compras\n3. Mostrar Puntos/Nivel\n4. Salir");
             switch (sc.nextLine()) {
                 case "1": menuClientes(svc, sc); break;
@@ -27,7 +28,7 @@ public class Main {
                     Cliente c = svc.obtenerCliente(id);
                     System.out.println(c);
                     break;
-                case "4": System.exit(0);
+                case "4": salir = true; break;
                 default: System.out.println("Opción inválida");
             }
         }
