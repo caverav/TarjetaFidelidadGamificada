@@ -20,6 +20,7 @@ mvn test
 ```
 
 ![Tests](docs/tests.png)
+
 ## Cobertura
 
 Se utilizó JaCoCo con EclEmma para medir cobertura de líneas y ramas.
