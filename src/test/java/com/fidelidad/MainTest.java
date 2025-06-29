@@ -52,7 +52,7 @@ class MainTest {
         assertTrue(out.contains("a) Agregar"), "Submenú debe ofrecer 'Agregar'");
         assertTrue(out.contains("b) Listar"),  "Submenú debe ofrecer 'Listar'");
 
-        assertTrue(out.contains("camilo"),
-        assertTrue(out.contains("camilo@fvv.cl"),
+        assertTrue(out.contains("camilo"),          "Debe listar el nombre 'camilo'");
+        assertTrue(out.contains("camilo@fvv.cl"), "Debe listar el correo 'camilo@fvv.cl'");
     }
 }
