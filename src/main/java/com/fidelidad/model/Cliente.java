@@ -11,7 +11,7 @@ public class Cliente {
     private int streakDias;
 
     public Cliente(String id, String nombre, String correo) {
-        if (!correo.contains("@")) throw new IllegalArgumentException("Correo inválido");
+        if (!correo.contains("@")) throw new IllegalArgumentException("Correo inválido: " + correo);
         this.id = id;
         this.nombre = nombre;
         this.correo = correo;
