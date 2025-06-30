@@ -34,7 +34,7 @@ public class Main {
         }
     }
 
-    private static void menuClientes(FidelidadService svc, Scanner sc) {
+    public static void menuClientes(FidelidadService svc, Scanner sc) {
         System.out.println("a) Agregar b) Listar c) Actualizar d) Eliminar e) Volver");
         switch (sc.nextLine()) {
             case "a":
@@ -61,7 +61,7 @@ public class Main {
         }
     }
 
-    private static void menuCompras(FidelidadService svc, Scanner sc) {
+    public static void menuCompras(FidelidadService svc, Scanner sc) {
         System.out.println("a) Registrar b) Listar c) Volver");
         switch (sc.nextLine()) {
             case "a":
